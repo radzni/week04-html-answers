@@ -77,25 +77,11 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" required>
                 <small>Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*).</small>
-                <button type="button" onclick="togglePassword()">Show Password</button>
+                
   
             </div>
             <button type="submit">Sign Up</button>
         </form>
     </div>
-    <script>
-        function togglePassword() {
-          const passwordField = document.getElementById("password");
-          const toggleButton = event.target;
-          
-          if (passwordField.type === "password") {
-            passwordField.type = "text";
-            toggleButton.textContent = "Hide Password";
-          } else {
-            passwordField.type = "password";
-            toggleButton.textContent = "Show Password";
-          }
-        }
-      </script>
 </body>
 </html>
